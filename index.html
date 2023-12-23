@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       .container
+       {
+            height: 100%;
+            display: flex;   
+            flex-direction: column;         
+            flex-wrap: wrap;
+            justify-content:start;
+            align-items: center;    
+            position: relative;       
+       }
+
+    </style>
+</head>
+<body>
+
+   <nav id="nav">
+        <h1><img src="./cap.svg" alt="cap" id="cap">Quiz<span style="color: rgb(252, 207, 62);">Grad</span></h1>
+        <ul>
+            <li><a href="#" onclick="howit()">How it works?</a></li>
+            <li><a href="#" onclick="feature()">Features</a></li>
+            <li><a href="#" onclick="about()">About Us</a></li>
+            <li><button id="btn"><span style="color: #FCC822; font-size: large;">Login</span></button></li>
+        </ul>
+   </nav>
+
+<section class="homepage" style="display: flex;">
+   <div class="s1" style="height: 100%;">
+        <p>Learn <br>
+            new concepts<br>
+            for each question</p>
+        <p>We help you prepare for exams and quizes </p>
+        <button class="start">Start Soving</button>
+   </div>
+   <div>
+    <img src="./g132.svg" alt="image">
+   </div>
+   </section>
+
+
+   <section class="popup">
+    
+        <div class="popup-body"> 
+            <div class="close">&times;</div>          
+            <div class="container">
+                <h1>Choose your favorite topic</h1>
+                <p>Select more than 5 topics to start quiz</p>
+                <div class="badges">
+                    <div class="badge1 brown-badge" onclick="badge(1)">TagBadge</div>
+                    <div class="badge2 yellow-badge" onclick="badge(2)">TagBadge <span>&times;</span></div>
+                    <div class="badge3 yellow-badge" onclick="badge(3)">TagBadge <span>&times;</span></div>
+                    <div class="badge4 brown-badge" onclick="badge(4)">TagBadge</div>
+                    <div class="badge5 brown-badge" onclick="badge(5)">TagBadge</div>
+                    <div class="badge6 brown-badge" onclick="badge(6)">TagBadge</div>
+                    <div class="badge7 yellow-badge" onclick="badge(7)">TagBadge <span>&times;</span></div>
+                    <div class="badge8 yellow-badge" onclick="badge(8)">TagBadge <span>&times;</span></div>
+                    <div class="badge9 brown-badge" onclick="badge(9)">TagBadge</div>
+                    <div class="badge10 brown-badge" onclick="badge(10)">TagBadge</div>
+                    <div class="badge11 brown-badge" onclick="badge(11)">TagBadge</div>
+                    <div class="badge12 yellow-badge" onclick="badge(12)">TagBadge <span>&times;</span></div>
+                    <div class="badge13 yellow-badge" onclick="badge(13)">TagBadge <span>&times;</span></div>
+                    <div class="badge14 brown-badge" onclick="badge(14)">TagBadge</div>
+                    <div class="badge15 brown-badge" onclick="badge(15)">TagBadge</div>
+                </div>
+
+                <button id="startQuiz">Start Quiz</button>
+            </div>
+        </div>
+   </section>
+
+<section id="questions" style="display: none;">
+    <div class="score" style="display: flex;">Score: 0</div>
+
+        <div class="que que1" >
+            <div class="question">
+                An interface design application that runs in the browser with team-based collaborative design projects
+            </div>
+            <div class="options">
+                <div class="opt" onclick="check(1,1)"><div class="card"><span class="abcd">A.</span>FIGMA</div></div>
+                <div class="opt"  onclick="check(2,1)"><div class="card"><span class="abcd">B.</span>ADOM XD</div></div>
+                <div class="opt"  onclick="check(3,1)"><div class="card"><span class="abcd">C.</span>INISION</div></div>
+                <div class="opt"  onclick="check(4,1)"><div class="card"><span class="abcd">D.</span>SKETCH</div></div>
+            </div>
+        </div>
+
+        <div class="que que2" style="display: none;">
+            <div class="question">
+               Which is the Capital Of India?
+            </div>
+            <div class="options">
+                <div class="opt" onclick="check(1,2)"><div class="card"><span class="abcd">A.</span>Mumbai</div></div>
+                <div class="opt"  onclick="check(2,2)"><div class="card"><span class="abcd">B.</span>Delhi</div></div>
+                <div class="opt"  onclick="check(3,2)"><div class="card"><span class="abcd">C.</span>Karachi</div></div>
+                <div class="opt"  onclick="check(4,2)"><div class="card"><span class="abcd">D.</span>Lahor</div></div>
+            </div>
+        </div>
+        <div class="que que3" style="display: none;">
+            <div class="question">
+              What is the full form of DSA
+            </div>
+            <div class="options">
+                <div class="opt" onclick="check(1,3)"><div class="card"><span class="abcd">A.</span>Dam Store Area</div></div>
+                <div class="opt"  onclick="check(2,3)"><div class="card"><span class="abcd">B.</span>Design Arichitecture</div></div>
+                <div class="opt"  onclick="check(3,3)"><div class="card"><span class="abcd">C.</span>Data Strutures and Algorithms</div></div>
+                <div class="opt"  onclick="check(4,3)"><div class="card"><span class="abcd">D.</span>none of the above</div></div>
+            </div>
+        </div>
+        <div class="que que4" style="display: none;">
+            <div class="question">
+               Which is the Capital Of Pakistan?
+            </div>
+            <div class="options">
+                <div class="opt" onclick="check(1,3)"><div class="card"><span class="abcd">A.</span>Mumbai</div></div>
+                <div class="opt"  onclick="check(2,3)"><div class="card"><span class="abcd">B.</span>Delhi</div></div>
+                <div class="opt"  onclick="check(3,3)"><div class="card"><span class="abcd">C.</span>Karachi</div></div>
+                <div class="opt"  onclick="check(4,3)"><div class="card"><span class="abcd">D.</span>Lahor</div></div>
+            </div>
+        </div>
+
+   
+    <div class="buttons">
+      <button class="prev btn" style="display: none;"><i class="fa-solid fa-caret-left"></i>Previous</button>
+     <div class="pairBtn" style="display: flex; align-items: center; justify-content: space-between;"> <button class="next btn">Next <i class="fa-solid fa-caret-right"></i></button>
+        <button class="skip btn">Skip</button></div>
+        <button class="submit btn" style="display: none;">Submit</button>
+    </div>
+</section>
+
+
+<section class="afterTest" style="display: none;">
+    <div class="close closeAfterTest">&times;</div>   
+        <div>
+                <h1>Congratulations!!!</h1>
+                <P id="afterTest">YOU SCORED :</P>
+        </div>
+</section>
+    
+   <script src="./script.js"></script>
+</body>
+</html>

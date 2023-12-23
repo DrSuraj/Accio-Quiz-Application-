@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Flow+Circular&family=Inter&family=Poppins&family=Quattrocento&family=Roboto&family=Ruda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Flow+Circular&family=Inter&family=Poppins&family=Quattrocento&family=Roboto&family=Ruda&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'robot';
+
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    align-items: center;
+    padding-inline: 10px;
+    padding-bottom: 20px;
+}
+
+#cap {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#nav>h1 {
+    position: relative;
+    padding: 9px;
+}
+
+#nav>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#nav>ul a {
+    margin-inline: 3rem;
+    font-size: large;
+    font-weight: 500;
+    text-decoration: none;
+    color: gray;
+}
+
+ul:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn {
+    border: 2px solid #FCC822;
+    padding-inline: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: white;
+}
+
+.homepage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.homepage>.s1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.homepage>.s1 P:first-child {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.homepage>.s1 p:nth-child(2) {
+    border-left: 2px solid black;
+    padding: 15px;
+}
+
+.homepage div:last-child {
+    margin: 10px;
+}
+
+
+.homepage>.s1>p {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+
+.start {
+    background-color: #FCC822;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px black;
+    font-size: 20px;
+}
+
+
+.popup
+{
+    position: fixed;
+    top: 0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    background-color: #fcc92233;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup>.popup-body
+{
+    position: relative;
+    background-color: white;
+    width: 800px;
+    height:500px;
+    padding: 40px;
+  
+}
+
+.close{
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+}
+
+
+.brown-badge
+{
+    background-color: rgb(209, 209, 209);    
+    cursor: pointer;
+    height: 40px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 30px;
+    padding-inline: 7px;
+    border: none;
+}
+
+/* .brown-badge:hover{
+    border:2px solid rgb(47, 47, 128);
+} */
+
+
+.yellow-badge
+{
+    background-color: #FCC822;    
+    cursor: pointer;
+    height: 40px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 30px;
+    padding-left: 7px;
+    border: none;
+   
+}
+
+.yellow-badge>span
+{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-left: 5px;
+  font-style:oblique;
+}
+
+.yellow-badge>span:hover{
+    border: 1px solid red;
+}
+
+/* .yellow-badge:hover{
+    border: 2px solid rgb(90, 79, 32);
+} */
+
+
+.container>h1
+{
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.container>p
+{
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.container>.badges
+{
+    position: absolute;
+    top: 200px;
+    bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#startQuiz{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    background-color: #FCC822;
+    color: white;
+    border: none;
+    padding-inline: 30px;
+    border-radius: 5px;
+}
+
+#startQuiz:hover{
+    background-color: green;
+}
+
+
+#questions{
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-around;
+   height: 700px;
+   position: relative;
+    
+}
+
+.que{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    height: 700px;     
+ }
+
+.question
+{
+    background-color: #FCC822;
+    color: white;
+    font-size: 30px;
+    font-family: 'poppins';
+    padding: 10px;
+    padding-inline: 20px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+}
+
+.opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card
+{
+    background-color:rgb(172, 167, 167) ;
+    padding: 30px;
+    padding-inline: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    position: relative;
+   
+}
+
+.abcd{
+    position: absolute;
+    top:0;
+    left:5px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.card:active{
+    background-color:#FCC822;
+    color: white;
+}
+
+
+.score
+{
+    margin-top: 20px;
+    background-color: #FCC822;
+    padding: 10px;
+    padding-inline: 20px;
+    color:white;
+    width: fit-content;
+    font-weight: 600;
+    font-size: 30px;
+    margin-left: 30px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline: 50px;
+}
+
+
+.btn
+{
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-inline: 20px;
+}
+
+.btn:active{
+    background-color: #FCC822;
+}
+
+
+.afterTest div
+{
+    display: flex;
+    height: 600px;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.afterTest h1{
+    margin-bottom: 30px;
+}
